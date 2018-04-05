@@ -1,0 +1,95 @@
+body {
+  font-family: "Noto Sans Japanese";
+  font-weight: 200;
+  color: #FFF;
+  height:100%;
+}
+
+.fab{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
+
+.fab-icon {
+  line-height: 0 !important;
+  vertical-align: sub;
+}
+
+.fab .btn-fab{
+  padding: 0;
+  margin: 0;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+
+  border-radius: 60px;
+  -moz-border-radius: 60px;
+  -webkit-border-radius: 60px;
+
+  display: block;
+  text-align: center;
+  position: relative;
+   
+  box-shadow: 0 1px 1.5px 0 rgba(0,0,0,.12), 0 1px 1px 0 rgba(0,0,0,.26);
+  -webkit-box-shadow: 0 1px 1.5px 0 rgba(0,0,0,.12), 0 1px 1px 0 rgba(0,0,0,.26);
+   
+  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+}
+
+.background {
+  display: block;
+  z-index: 1;
+  height: 100%;
+  min-height: 100%;
+  border:solid 2px rgba(159, 41, 80, 0.68);
+  overflow: hidden;
+  background-color: rgba(66, 4, 4, 0.548);
+}
+
+::selection {
+  background: rgba(20, 168, 176, 0.5);
+  color: #fff;
+}
+
+.background::before {
+  content: " ";
+  height: auto;
+  min-height: max-content;
+  background-image: url('../image/vagus_image.jpg');
+  background-position: top;
+  filter: blur(6px);
+  position: fixed;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+}
+
+.text-wrapper  > span {
+  background-color: rgba(3, 3, 3, 0.3);
+  display: inline;
+}
+
+.text-wrapper {
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+h1{
+  font-weight: 200;
+  margin:32px 0;
+}
+
+.row {
+  margin: 0 0 32px 0;
+}
+
+.lyrics {
+  text-align: center;
+}
